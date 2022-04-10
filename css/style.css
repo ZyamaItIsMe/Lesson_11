@@ -1,0 +1,143 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900display=swap");
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	overflow-x: hidden;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+}
+
+/* ------------------------------ */
+[class*="__container"] {
+	margin: 0px auto;
+	max-width: 1020px;
+}
+.who-we-are {
+	padding: 120px;
+}
+.who-we-are__container {
+	max-height: 700px;
+	background-color: #5D62B5;
+	border-radius: 40px;
+	padding: 100px 87px 0 87px;
+}
+.who-we-are__text-block {
+	position: relative;
+}
+.who-we-are__text-block::before{
+	content: '';
+	position: absolute;
+	top: -208px;
+	left: 810px;
+	background: url("../img/buble.svg") 0 0 no-repeat;
+	width: 201px;
+	height: 317px;
+}
+.who-we-are__subtitle {
+	padding: 0 0 0 36px;
+	position: relative;
+}
+.who-we-are__subtitle::before {
+	content: '';
+	background: url("../img/Overline-Mark.png") 0 0 no-repeat;
+	width: 17px;
+	height: 20px;
+	position: absolute;
+	top: -2px;
+	left: 0;
+}
+.subtitle {
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 24px;
+	align-items: center;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #F5F5F5;
+}
+.subtitle__item {
+	margin: 0 0 33px 0;
+}
+.who-we-are__title {
+	margin: 0 0 36px 0;
+}
+.title{
+	font-family: 'Roboto';
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #FFFFFF;
+}
+.title__item{
+}
+.who-we-are__text {
+	font-family: 'Roboto';
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #F5F5F5;
+	margin: 0 0 54px 0;
+}
+.who-we-are__image-block {
+	position: relative;
+}
+.who-we-are__image-block::before{
+	content: '';
+	position: absolute;
+	top: -155px;
+	left: -105px;
+	background: url("../img/Blob.png") 0 0 no-repeat;
+	width: 665px;
+	height: 591px;
+	z-index: 0;
+}
+.picture__image {
+	border-radius: 40px;
+	position: relative;
+	z-index: 2;
+}
+
